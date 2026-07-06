@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LangSmith Playground</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="topbar">
+        <div>
+          <p class="eyebrow">LangSmith Playground</p>
+          <h1>LLM Observability Dashboard Tester</h1>
+        </div>
+        <a class="dashboard-link" href="https://smith.langchain.com" target="_blank" rel="noreferrer">Open LangSmith</a>
+      </section>
+
+      <section class="status-grid" id="statusGrid">
+        <div class="status-card">Loading backend status...</div>
+      </section>
+
+      <section class="workspace">
+        <aside class="controls">
+          <label>
+            Topic
+            <input id="topicInput" value="LangSmith token usage and tracing" />
+          </label>
+          <button id="runLabBtn">Run Token Lab</button>
+
+          <label>
+            Chat Prompt
+            <textarea id="chatInput">Explain how LangSmith helps monitor token consumption.</textarea>
+          </label>
+          <button id="chatBtn">Run Chat Trace</button>
+
+          <label>
+            Prompt Comparison Question
+            <textarea id="compareInput">How do I reduce LLM token cost without losing answer quality?</textarea>
+          </label>
+          <button id="compareBtn">Compare Prompts</button>
+          <button id="errorBtn" class="danger">Simulate Error Trace</button>
+        </aside>
+
+        <section class="results">
+          <div class="result-header">
+            <h2>Results</h2>
+            <span id="activityState">Ready</span>
+          </div>
+          <div id="resultArea" class="result-area">
+            Run the token lab, then open LangSmith project Venkat and filter by tags: observability, tokens, latency.
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.env
+**/.env
+**/.venv/
+**/venv/
+**/node_modules/
+**/__pycache__/
+**/.vite/
+*.pyc
+*.log
+*.db
+langsmith-playground/sessions/*
+!langsmith-playground/sessions/.gitkeep

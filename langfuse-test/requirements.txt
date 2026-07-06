@@ -1,0 +1,23 @@
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# OpenAI SDK
+openai==1.57.0
+
+# Langfuse observability (includes langfuse.openai wrapper)
+langfuse==2.57.3
+
+# Database (SQLite via SQLAlchemy)
+sqlalchemy==2.0.36
+aiosqlite==0.20.0
+
+# Settings & environment
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# HTTP client for async requests
+httpx==0.27.2
+
+# Utilities
+python-multipart==0.0.12
