@@ -73,4 +73,4 @@ In the LangSmith project, use the frontend buttons:
 
 Then filter LangSmith traces by tags like `observability`, `tokens`, `latency`, `comparison`, and `error`.
 
-In the Langfuse project, use the chat, dashboard, experiment, and analytics pages. Then inspect traces, generations, scores, prompts, costs, latency, and token usage in Langfuse.
+In the Langfuse project, use the chat, dashboard, experiment, and analytics pages. Then inspect traces, generations, scores, prompts, costs, latency, and token usage along with prompt comparision and prompt evaluation in Langfuse.
